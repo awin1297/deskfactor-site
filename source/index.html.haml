@@ -7,14 +7,14 @@
         =link_to '#how-it-works' do
           .link
             How It Works
-        =link_to '#' do
+        =link_to '#pricing' do
           .link
             Pricing
         =link_to 'admin.html' do
           .link
             Sign In
     .row-fluid
-      .span12
+      .col-md-12
         #pitchheader
           %h1
             %span
@@ -36,19 +36,18 @@
 
 
 .full-section#spreadsheet-pitch
-  .container
+  .pitch-container
     .row-fluid
       .span12
         %a{:id => "how-it-works"}
         #spreadsheet-pitch-header.centertext
           %br
-          %h2 Still using spreadsheets to manage payroll?
+          %h2 Lets face it. Losing talent is difficult
           %h5 Here's why you should use a modern payroll and HR system.
 
     .row-fluid.hometourslide
       .span1
       .span4
-        = image_tag("features/home_data.png")
       .span7.sliddescription
         %h4 Have all your data at your fingertips.
         %span With a powerful intuitive user interface, managing employee records becomes a breeze!
@@ -86,31 +85,57 @@
               %i.icon-ok-sign
               Approve your employees' leaves and expenses
         .span4
-          = image_tag("features/home_leaves.png")
+
         .span1
 
 
-.full-section#bottom-signup
-  .container
-    .row-fluid
-      .span12
-        #pitchbottom.centertext
-          %h3  Ready to switch?
-          .desc
-            Track leaves and expenses of employees online.
-            %br/
-            Say goodbye to searching employee spreadsheets, and generating pdf payslips.
-            #pitchbottom-button
-              %a.btn.btn-success{:href=>"/a/signup?plan=1001"}
-                %h4 Add Your Team To Get Started
-                .button-subtext
-                  %span 14 day free trial. No credit card required
+.full-section.even
+  .pitch-container
+    .row
+      .col-md-12
+        %h3 How will DeskFactor help you?
+        %p With our sensors pumping in key performance data of your assets, to your cloud data centers, have access to performance metrics and charts in real time.
+    .row
+      .col-md-4
+        .feature
+          %h4 Solutions for Manufactoring
+          %p With our sensors pumping in key performance data of your assets, to your cloud data centers, have access to performance metrics and charts in real time.
 
-        #pitchbottom-image-wrap
-          =image_tag "pitch-bottom-app.jpg"
+      .col-md-4
+        .feature
+          %h4 Solutions for Manufactoring
+          %p With our sensors pumping in key performance data of your assets, to your cloud data centers, have access to performance metrics and charts in real time.
+
+      .col-md-4
+        .feature
+          %h4 Solutions for Manufactoring
+          %p With our sensors pumping in key performance data of your assets, to your cloud data centers, have access to performance metrics and charts in real time.
 
 
-    .row-fluid
-      .span12.centertext
-        %p.smallfont
 
+.full-section
+  .pitch-container
+    .row
+      .col-md-12
+        %a{:id => "pricing"}
+    .row
+      .col-md-3
+      .col-md-4.price
+        .pricewrap
+          %h1.cost
+            $2 
+          %h5
+            per person / month
+          .separator
+          %h6.feature Payroll & Employee Records
+          %h6.feature 
+            %b 1 GB 
+            Document Storage
+          %h6.feature 
+            Employee Self Service
+          %h6.feature
+            Leave Management
+          %h6.feature
+            Claims Management
+  
+      .col-md-3
