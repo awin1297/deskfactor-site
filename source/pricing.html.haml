@@ -1,0 +1,129 @@
+.container
+  .container-fluid
+    %h1.pricetitle
+      14 Day Free Trial on All Plans
+    %p.pricetitledesc
+      Less than a dollar per employee. No Credit card required.
+    .row-fluid
+
+      .span4.price
+        .pricewrap
+          %h4.name STARTER
+          %h4.cost{:style => "background-color: #2087bd;"}
+            FREE
+            .subtext
+              forever
+          %h4.for  UPTO 10 EMPLOYEES
+          .separator
+          %h6.feature Payroll & Employee Records
+          %h6.feature 
+            %b 1 GB 
+            Document Storage
+          %h6.feature 
+            Employee Self Service
+          %h6.feature
+            Leave Management
+          %h6.feature
+            Claims Management
+          .signupbutton
+            =link_to "#", :class => ["btn", "btn-info", "btn-large"] do
+              %i.icon-check.icon-white
+              %b Start Trial
+
+      .span4.price.boldprice
+        .pricewrap
+          %h4.name PROFESSIONAL
+          %h4.cost{:style => "background-color: green;"} 
+            $19
+            .subtext per month
+          %h4.for  UPTO 25 EMPLOYEES
+          .separator
+          %h6.feature Payroll & Employee Records
+          %h6.feature 
+            %b 5 GB 
+            Document Storage
+          %h6.feature 
+            Employee Self Service
+          %h6.feature
+            Leave Management
+          %h6.feature
+            Claims Management
+          .signupbutton
+            =link_to "#", :class => ["btn", "btn-danger", "btn-large"] do
+              %i.icon-check.icon-white
+              %b Start Trial
+
+      .span4.price
+        .pricewrap
+          %h4.name BUSINESS PRO
+          %h4.cost{:style => "background-color: #2087bd;"} 
+            $39
+            .subtext
+              per month
+          %h4.for  UPTO 50 EMPLOYEES
+          .separator
+          %h6.feature Payroll & Employee Records
+          %h6.feature 
+            %b 10 GB 
+            Document Storage
+          %h6.feature 
+            Employee Self Service
+          %h6.feature
+            Leave Management
+          %h6.feature
+            Claims Management
+          .signupbutton
+            =link_to "#", :class => ["btn", "btn-info", "btn-large"] do
+              %i.icon-check.icon-white
+              %b Start Trial
+
+
+.container
+  #call-contact
+    .container-fluid
+      .row-fluid
+        .span12
+          #unsure
+            %h5.question 
+              %span
+                Unsure which plan is best for you? 
+              &nbsp;&nbsp;
+              We are happy to help. Write to us at
+              = link_to "hello@newhirehq.com", "mailto:hello@newhirehq.com"
+
+.container
+  #pricingquestions
+    .container-fluid
+      .row-fluid
+        .span12
+          %h3
+            Commonly Asked Questions
+      .row-fluid
+        .span6
+          .qwrap
+            %h4.question Is there a setup fee?
+            %h5.answer No. There are no hidden charges or setup fees on any of our plans.
+          .qwrap
+            %h4.question Can I try NewHire without paying?
+            %h5.answer 
+              Absolutely. All the plans have a 14 day free trial period. After the 14 day trial period, you will have to upgrade your account to continue using your account. All features will be enabled in the 14 day free trial. And we do not require your credit card until you upgrade to a paid plan.
+          .qwrap
+            %h4.question I have more questions. How do I contact NewHire?
+            %h5.answer 
+              We are always happy to hear from you! Contact us at 
+              = link_to "hello@newhirehq.com", "mailto:hello@newhirehq.com"
+        .span6
+          .qwrap
+            %h4.question Can my plan be upgraded?
+            %h5.answer Yes. Your plan can be upgraded or downgraded any time provided you are within the limits of the plan.
+          .qwrap
+            %h4.question What if I upgrade or downgrade in the middle of the month?
+            %h5.answer 
+              You can upgrade or downgrade in the middle of a month. Your new plan will be effective immediately. Your validity will be extended for a month from the day of the upgrade and you will be charged for the amount till your validity. If you want to downgrade the plan, write to us at 
+              = link_to "hello@newhirehq.com", "mailto:hello@newhirehq.com"
+          .qwrap
+            %h4.question How can I cancel my account?
+            %h5.answer 
+              No problem. You can write to us at
+              = link_to "hello@newhirehq.com", "mailto:hello@newhirehq.com"
+              for cancelling your account.

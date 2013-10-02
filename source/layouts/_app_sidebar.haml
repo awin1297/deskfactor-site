@@ -1,0 +1,36 @@
+#sidebar-wrapper
+  .sidebar-section.brand
+    %a{href: "index.html"} deskfactor
+  .sidebar-section.special-link#userdetails
+    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+      =image_tag 'person.jpg', class: 'profile-image'
+      ="Awin Abi"
+      %i.icon-chevron-sign-down
+    %ul.dropdown-menu
+      %li{:role => "presentation"}
+        = link_to '#' do
+          %i.icon-question-sign
+          Help & Support
+      %li.divider{:role => "presentation"}
+      %li{:role => "presentation"}
+        = link_to 'index.html' do
+          %i.icon-signout
+          Log Out
+
+  %ul.sidebar-nav
+    %li
+      %a{href: "#"} 
+        %i.icon-bolt
+        All Activities
+    %li
+      %a{href: "#"} 
+        %i.icon-bell
+        Notifications
+    %li
+      %a{href: "#"} 
+        %i.icon-trophy
+        Achievements
+    %li
+      %a{href: "#"}
+        %i.icon-cog
+        Settings

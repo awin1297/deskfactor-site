@@ -1,0 +1,25 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    %meta{content: "", name: "description"}
+    %meta{content: "", name: "author"}
+    %title Recognise and Motivate Your Development Team - DeskFactor
+
+    = stylesheet_link_tag "bootstrap", :media => "all"
+    = stylesheet_link_tag "font-awesome/css/font-awesome.min.css", :media => "all"
+    = stylesheet_link_tag "static", :media => "all"
+    = stylesheet_link_tag "application", :media => "all"
+
+  %body
+    #wrapper
+      = partial 'layouts/sidebar'
+      #page-content-wrapper
+        = yield
+      = partial 'layouts/footer'
+
+    = javascript_include_tag "application"
+    = javascript_include_tag "jquery"
+    = javascript_include_tag "bootstrap"
+

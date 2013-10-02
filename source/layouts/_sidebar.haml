@@ -1,0 +1,31 @@
+#sidebar-wrapper
+  .sidebar-section.brand
+    %a{href: "#"} deskfactor
+  .sidebar-section.special-link
+    %a{href: "admin.html"}
+      %i.icon-lock
+      Sign In
+  .sidebar-section#smalldesc
+    %p= "DeskFactor is an Developer Feedback Platform that helps recognise individual developer contributions."
+    %p= "Signup for a free trial below (credit card not required). See our pricing plans #{link_to 'here', '#'}."
+
+  .sidebar-section#signupform
+    %span.form-signin-heading
+      %i.icon-ok-sign
+      New Account?
+    %input.form-control{type: "text", placeholder: "Email Address", autofocus: ""}
+    %input.form-control{type: "password", placeholder: "Password"}
+    %input.form-control{type: "password", placeholder: "Password Again"}
+
+    %button.btn.btn-lg.btn-primary.btn-block{ type: "submit"}
+      Start Free Trial
+  %br
+  %br
+  .sidebar-section#smalldesc
+    %h5 Need Help?
+    %h5
+      %i.icon-phone-sign
+      +91 9901 421 979
+    %h5
+      %i.icon-envelope
+      awin@deskfactor.com

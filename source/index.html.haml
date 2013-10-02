@@ -1,0 +1,116 @@
+
+.full-section#pitch
+  .container
+    .row-fluid
+      .span8
+      .span4.topnav.pull-right
+        =link_to '#how-it-works' do
+          .link
+            How It Works
+        =link_to '#' do
+          .link
+            Pricing
+        =link_to 'admin.html' do
+          .link
+            Sign In
+    .row-fluid
+      .span12
+        #pitchheader
+          %h1
+            %span
+              Recognise. Motivate.
+              %br
+              Your Development Team
+        #pitchdesc
+          %p
+            DeskFactor is an Developer Feedback Platform, that integrates 
+            %br
+            with the existing tools you use like GitHub and Jira and helps recognise individual contributions,
+            %br
+            to engage with your team on a daily basis.
+            %br
+            %br
+        #pitchaction
+          %a.btn.btn-success{:href=>'#how-it-works'}
+            %h4 See How It Works &raquo;
+
+
+.full-section#spreadsheet-pitch
+  .container
+    .row-fluid
+      .span12
+        %a{:id => "how-it-works"}
+        #spreadsheet-pitch-header.centertext
+          %br
+          %h2 Still using spreadsheets to manage payroll?
+          %h5 Here's why you should use a modern payroll and HR system.
+
+    .row-fluid.hometourslide
+      .span1
+      .span4
+        = image_tag("features/home_data.png")
+      .span7.sliddescription
+        %h4 Have all your data at your fingertips.
+        %span With a powerful intuitive user interface, managing employee records becomes a breeze!
+        %span You don't have to search through spreadsheets, and a document folder for your employee payslips again. Distribution of payslips with a click of a button. Means you save a lot of your time. 
+        %br/
+        %br/
+        %p 
+          %b NewHire got you covered. Use NewHire to
+        .slidelist
+          %h5 
+            %i.icon-ok-sign
+            Manage monthly payroll with ease
+            %i.icon-ok-sign
+            View historical payslips and payslip changes
+            %i.icon-ok-sign
+            Send password protected payslips to employees
+    .whitebordertop
+      .row-fluid.hometourslide
+        .span7.sliddescription
+          %h4 Track your team's leaves and expenses.
+          
+          %span So you have a label named 'Team', which has leave requests and expense claim requests of your employees. Say, someone sends you an email requesting a travel vacation but finally decided to cancel it, and forgets to update you? Don't let that email folder, fool you again. Say no to word-of-mouth approvals.
+          %br/
+          %br/
+          %p 
+            %b NewHire got you covered. Use NewHire to 
+          .slidelist
+            %h5 
+              %i.icon-ok-sign
+              Manage leave requests
+              %i.icon-ok-sign
+              Define holiday calendar
+              %i.icon-ok-sign
+              Track employee expense claims
+              %i.icon-ok-sign
+              Approve your employees' leaves and expenses
+        .span4
+          = image_tag("features/home_leaves.png")
+        .span1
+
+
+.full-section#bottom-signup
+  .container
+    .row-fluid
+      .span12
+        #pitchbottom.centertext
+          %h3  Ready to switch?
+          .desc
+            Track leaves and expenses of employees online.
+            %br/
+            Say goodbye to searching employee spreadsheets, and generating pdf payslips.
+            #pitchbottom-button
+              %a.btn.btn-success{:href=>"/a/signup?plan=1001"}
+                %h4 Add Your Team To Get Started
+                .button-subtext
+                  %span 14 day free trial. No credit card required
+
+        #pitchbottom-image-wrap
+          =image_tag "pitch-bottom-app.jpg"
+
+
+    .row-fluid
+      .span12.centertext
+        %p.smallfont
+
